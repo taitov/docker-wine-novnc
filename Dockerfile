@@ -27,6 +27,9 @@ RUN apt-get install -y --no-install-recommends \
         wine32 \
         winetricks
 
+RUN apt-get install -y --no-install-recommends \
+        libgl1-mesa-glx:i386
+
 RUN rm -rf /var/lib/apt/lists/*
 
 ENV WINEARCH=win32
