@@ -47,10 +47,12 @@ ENV HOME=/root \
     DISPLAY=:0.0
 
 ENV DISPLAY_WIDTH=1920 \
-    DISPLAY_HEIGHT=1080 \
-    DIRECTORY=/application \
-    APPLICATION=notepad.exe \
-    ARGUMENTS=""
+    DISPLAY_HEIGHT=1080
+
+ENV WORKDIR=/application \
+    APPLICATION=notepad.exe
+
+ENV COMMAND=""
 
 CMD ["/root/utils/entrypoint.sh"]
 
