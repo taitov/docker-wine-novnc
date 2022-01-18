@@ -20,7 +20,7 @@ RUN apt-get install -y --no-install-recommends \
         supervisor \
         x11vnc \
         xvfb \
-        xdotool
+        xterm
 
 RUN dpkg --add-architecture i386 && apt-get update
 RUN apt-get install -y --no-install-recommends \
